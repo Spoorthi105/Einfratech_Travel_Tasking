@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 shadow-lg">
+
+        
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TravelX</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About Us</a></li>
+                <li><a href="#services" class="hover:underline">Services</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+                <li><a href="./signin.html" class="hover:underline">Sign In</a></li>
+                <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+
+       
+            </ul>
+
+            <button id="menu-btn" class="md:hidden text-white text-2xl">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-blue-600 text-white text-center py-4">
+        <li><a href="#home" class="block py-2">Home</a></li>
+        <li><a href="#about" class="block py-2">About Us</a></li>
+        <li><a href="#services" class="block py-2">Services</a></li>
+        <li><a href="#contact" class="block py-2">Contact</a></li>
+        <!-- <nav> -->
+            <li><a href="./signin.html" class="hover:underline">Sign In</a></li>        <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+
+    <!-- </nav> -->
+    </ul>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center hero-section">
+        <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg text-white">
+            <h1 class="text-5xl font-bold">Explore the World with Us</h1>
+            <p class="mt-4 text-lg">Your dream destinations are just a click away.</p>
+            <a href="#services" class="mt-6 inline-block bg-blue-500 px-6 py-3 rounded-full text-lg">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 text-center">
+        <h2 class="text-3xl font-bold">About Us</h2>
+        <p class="mt-4 text-gray-600 max-w-3xl mx-auto">We are a travel agency dedicated to helping you explore the world's most beautiful places.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-gray-200 text-center">
+        <h2 class="text-3xl font-bold">Our Services</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="service-card">
+                <h3 class="text-xl font-semibold">Custom Travel Packages</h3>
+                <p class="text-gray-600 mt-2">Tailor-made tours to suit your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3 class="text-xl font-semibold">Hotel & Flight Booking</h3>
+                <p class="text-gray-600 mt-2">Best deals on hotels and flights.</p>
+            </div>
+            <div class="service-card">
+                <h3 class="text-xl font-semibold">24/7 Customer Support</h3>
+                <p class="text-gray-600 mt-2">We are here to assist you anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 text-center">
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="mt-4 text-gray-600">Reach out for inquiries or bookings.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        <p>&copy; 2025 TravelX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
